@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+<!--
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="a14f108fcf3e4d9"
+            ads:loadAdOnCreate="true"
+            android:visibility="invisible" > 
+
+        </com.google.ads.AdView> -->
+
+
+    <RelativeLayout     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="100dip" >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rock"
+            android:text="Rock" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paper"
+            android:layout_below="@id/rock"
+            android:text="paper" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scissor"
+            android:layout_below="@id/paper"
+            android:text="scissor" />
+    </RelativeLayout>
+
+    <RelativeLayout     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+        <ImageView
+            android:id="@+id/conf_image"
+            android:layout_width="320dip"
+            android:layout_height="480dip"
+            android:background="#FFFFFF"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
